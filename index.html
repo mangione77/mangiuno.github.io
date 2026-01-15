@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mangi - Técnico de sonido especializado en mezcla y mastering. Servicios profesionales para artistas, bandas y productores.">
+  <meta name="keywords" content="mezcla, mastering, sonido, técnico de sonido, producción musical, tecnico de sonido Buenos Aires, Argentina, productor buenos aires, mastering argentina, edicion de podcasts">
+  <meta name="author" content="Mangi">
+  <title>Mangi - Técnico de Sonido Profesional | Mezcla y Mastering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎚️</text></svg>">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">MANGI</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="#pricing" class="nav-link">Presupuesto</a></li>
+        <li class="nav-item"><a href="#bio" class="nav-link">Sobre Mí</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">MANGI - TÉCNICO DE SONIDO</h1>
+      <p class="hero-subtitle">
+        Mezcla y Mastering con onda para tu proyecto musical. Calidad de estudio en cada track.
+      </p>
+      <p class="hero-description">
+        ¿Tenés temas que necesitan ese toque profesional? Soy Mangi, técnico de sonido con años de laburo en el ambito musical.
+        Trabajemos en tu sonido con mis servicios.
+      </p>
+      <a href="#pricing" class="cta-button">ARMÁ TU PRESUPUESTO</a>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing-section">
+    <h2 class="section-title">ARMÁ TU PRESUPUESTO</h2>
+    <p class="section-subtitle">
+      Seleccioná los servicios de audio que necesitás y calculá el precio. Sin complicaciones.
+    </p>
+
+    <div class="pricing-container">
+      <div class="service-category">
+        <h3 class="category-title">MEZCLA Y MASTERING</h3>
+        <div class="services-grid">
+          <div class="service-item" data-service="single" data-price="50000">
+            <div class="service-header">
+              <h4 class="service-name">Single</h4>
+              <span class="service-price">$50.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Mezcla y mastering para un solo tema, con hasta 4 revisiones.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="ep" data-price="180000">
+            <div class="service-header">
+              <h4 class="service-name">EP</h4>
+              <span class="service-price">$180.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Hasta 5 temas con mezcla y mastering incluidos.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="album" data-price="420000">
+            <div class="service-header">
+              <h4 class="service-name">Álbum</h4>
+              <span class="service-price">$420.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Hasta 12 temas, ideal para discos completos.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="vivo" data-price"140000">
+            <div class="service-header">
+              <h4 class="service-name">Vivo</h4>
+              <span class="service-price">$140.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Hasta 10 temas, mezcla y mastering para grabaciones en vivo.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-category">
+        <h3 class="category-title">SERVICIOS EXTRA</h3>
+        <div class="services-grid">
+          <div class="service-item" data-service="limpieza" data-price="30000">
+            <div class="service-header">
+              <h4 class="service-name">Limpieza de diálogo</h4>
+              <span class="service-price">$30.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Eliminación de ruidos y mejora de claridad en diálogos (podcasts o audiovisual)
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="baterias" data-price="20000">
+            <div class="service-header">
+              <h4 class="service-name">Edición de Baterías o Programación</h4>
+              <span class="service-price">$20.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Corrección de timing y edición de baterías acústicas o programadas.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="stems" data-price="7500">
+            <div class="service-header">
+              <h4 class="service-name">Export de stems</h4>
+              <span class="service-price">$7.500 ARS</span>
+            </div>
+            <p class="service-desc">
+              Exportación de stems listos para remezcla o colaboración.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="reaper" data-price="18000">
+            <div class="service-header">
+              <h4 class="service-name">Sesión de Reaper ordenada y comentada</h4>
+              <span class="service-price">$18.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Organización de sesión con comentarios
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="versiones" data-price="15000">
+            <div class="service-header">
+              <h4 class="service-name">Versiones alternas (instrumental / acapella / clean)</h4>
+              <span class="service-price">$15.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Creación de versiones alternativas de tu tema.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+
+          <div class="service-item" data-service="vocal" data-price="15000">
+            <div class="service-header">
+              <h4 class="service-name">Edición vocal (afinación+timing)</h4>
+              <span class="service-price">$15.000 ARS</span>
+            </div>
+            <p class="service-desc">
+              Corrección de afinación y timing en vocales.
+            </p>
+            <button class="select-service">SELECCIONAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscription-section">
+        <div class="subscription-card">
+          <div class="subscription-header">
+            <h3 class="subscription-title">¡OBTENÉ UN 15% DE DESCUENTO!</h3>
+            <div class="discount-badge">
+              -15%
+            </div>
+          </div>
+          <p class="subscription-text">
+            Suscribite a mi newsletter y recibí un <strong>15% de descuento</strong> en tu primer pedido. Te mantengo al tanto de novedades, tips de producción y ofertas especiales.
+          </p>
+          <form id="subscription-form" class="subscription-form">
+            <div class="form-group">
+              <input type="email" id="subscription-email" class="email-input" placeholder="santidameyaelmail@email.com" required>
+              <button type="submit" class="subscribe-button">SUSCRIBIRME Y OBTENER DESCUENTO</button>
+            </div>
+            <p class="form-note">
+              Al suscribirte aceptás recibir emails con novedades. Podés darte de baja cuando quieras.
+            </p>
+          </form>
+          <div id="subscription-success" class="subscription-success" style="display: none;">
+            <p>
+              ¡Gracias por suscribirte! Tu código de descuento ha sido aplicado automáticamente. <span class="discount-applied">✓ Descuento 15% aplicado</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-output-container">
+        <div class="pricing-info">
+          <p>
+            <strong>Atención:</strong> Todos los servicios incluyen 4 revisiones, en caso de necesitar más revisiones $ARS 10.000 c/u.
+          </p>
+        </div>
+
+        <div class="selected-services">
+          <h3 class="selected-title">SERVICIOS SELECCIONADOS</h3>
+          <div id="selected-list" class="selected-list">
+            <p class="empty-selection">
+              Todavía no seleccionaste ningún servicio.
+            </p>
+          </div>
+          <div class="price-breakdown">
+            <div class="price-row subtotal-row">
+              <span class="price-label">Subtotal:</span>
+              <span id="subtotal-amount" class="price-value">$0 ARS</span>
+            </div>
+            <div class="price-row discount-row">
+              <span class="price-label">Descuento (15%):</span>
+              <span id="discount-amount" class="price-value discount-value">-$0 ARS</span>
+            </div>
+            <div class="total-price">
+              <span class="total-label">TOTAL:</span>
+              <span id="total-amount" class="total-amount">$0 ARS</span>
+            </div>
+            <div id="discount-notice" class="discount-notice" style="display: none;">
+              <span class="discount-icon">🎵</span>
+              <span>¡Descuento del 15% aplicado!</span>
+            </div>
+          </div>
+          <button id="add-to-cart" class="add-to-cart" disabled>AGREGAR AL CARRITO</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bio" class="bio-section">
+    <div class="bio-container">
+      <div class="bio-content">
+        <h2 class="section-title">SOBRE MANGI</h2>
+        <p class="bio-text">
+          Soy Mangi, técnico de sonido argentino con más de x años en la escena musical. Me especializo en mezcla y mastering para todos los géneros, desde rock y folclore hasta trap y electrónica.
+        </p>
+        <p class="bio-text">
+          Mi laburo se enfoca en resaltar la esencia de cada proyecto, dándole ese toque profesional que necesita para competir en las plataformas digitales. Trabajé con artistas emergentes y consagrados de la escena local.
+        </p>
+        <p class="bio-text">
+          Utilizo herramientas de última generación y técnicas probadas para garantizar que tu música suene impecable en cualquier dispositivo, desde auriculares hasta sistemas de sonido grandes.
+        </p>
+        <a href="/bio" class="bio-button">CONOCÉ MÁS SOBRE MÍ</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <h2 class="section-title">PORTFOLIO</h2>
+    <p class="section-subtitle">
+      Algunos de mis trabajos más destacados
+    </p>
+
+    <div class="portfolio-container">
+      <div class="portfolio-content">
+        <p>
+          He trabajado en nunumeroso proyectos musicales, desde singles hasta álbumes completos. Mis especialidades incluyen:
+        </p>
+        <ul class="portfolio-list">
+          <li>Mezcla y mastering</li>
+          <li>Producción de sonido</li>
+          <li>Edición y post-producción de audio para podcasts</li>
+          <li>Mezcla en vivo y grabación de conciertos</li>
+        </ul>
+        <div class="browser-sim">
+          <div class="browser-header">
+            <div class="browser-buttons">
+              <span class="browser-btn close"></span>
+              <span class="browser-btn minimize"></span>
+              <span class="browser-btn maximize"></span>
+            </div>
+            <div class="browser-url">
+              <span>https://mangi.website</span>
+            </div>
+          </div>
+          <div class="browser-content">
+            <div class="website-preview">
+              <div class="preview-header">
+                <h3>MANGI - PORTFOLIO COMPLETO</h3>
+              </div>
+              <div class="preview-grid">
+                <div class="preview-item">
+                  Proyecto 1: Álbum "Sonidos Urbanos"
+                </div>
+                <div class="preview-item">
+                  Proyecto 2: Single "Noche de Ciudad"
+                </div>
+                <div class="preview-item">
+                  Proyecto 3: EP "Vibraciones"
+                </div>
+                <div class="preview-item">
+                  Proyecto 4: Mastering para banda "Los Creadores"
+                </div>
+                <div class="preview-item">
+                  Proyecto 5: Edición de podcast "Músicos en Acción"
+                </div>
+                <div class="preview-item">
+                  Proyecto 6: Mezcla en vivo "Festival del Río"
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/portfolio" class="portfolio-button">VER PORTFOLIO COMPLETO</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3 class="footer-title">MANGI</h3>
+        <p>
+          Técnico de sonido profesional especializado en mezcla y mastering / producción musical.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-subtitle">SERVICIOS</h4>
+        <ul class="footer-links">
+          <li><a href="#pricing">Mezcla y Mastering</a></li>
+          <li><a href="#pricing">Servicios Extra</a></li>
+          <li><a href="/bio">Consultoría</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-subtitle">CONTACTO</h4>
+        <p>
+          Email: hola@mangiSANTIENQMAILQUEDAMOS??
+        </p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Behance">SC</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        &copy; 2026 Mangi - Técnico de Sonido y Productor. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <div id="payment-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">CONFIRMAR COMPRA</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-summary">
+          <h4>Resumen de compra:</h4>
+          <div id="modal-services" class="modal-services">
+            <!-- aca se insertan los servicios desde el main.js -->
+          </div>
+          <div class="price-breakdown-modal">
+            <div class="price-row subtotal-row">
+              <span>Subtotal:</span>
+              <span id="modal-subtotal">$0 ARS</span>
+            </div>
+            <div class="price-row discount-row">
+              <span>Descuento (15%):</span>
+              <span id="modal-discount" class="discount-value">-$0 ARS</span>
+            </div>
+            <div class="modal-total">
+              <span>TOTAL A PAGAR:</span>
+              <span id="modal-total">$0 ARS</span>
+            </div>
+          </div>
+          <div id="savings-message" class="savings-message" style="display: none;">
+            <span class="savings-icon">💰</span>
+            <span>¡Ahorraste <span id="savings-amount">$0</span> con tu suscripción!</span>
+          </div>
+          <div class="modal-warning">
+            <p>
+              Recordá: Todos los servicios incluyen 4 revisiones incluidas.
+            </p>
+          </div>
+        </div>
+
+        <div class="payment-options">
+          <h4>Métodos de pago:</h4>
+          <button id="mercadolibre-btn" class="payment-btn mercadolibre-btn">PAGAR CON MERCADOLIBRE</button>
+          <button id="paypal-btn" class="payment-btn paypal-btn">PAGAR CON PAYPAL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
