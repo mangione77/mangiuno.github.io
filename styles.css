@@ -795,7 +795,6 @@ section {
   background-color: rgba(185, 103, 255, 0.1);
 }
 
-/* Portfolio Section */
 .portfolio-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -821,7 +820,6 @@ section {
   color: var(--neon-blue);
 }
 
-/* Browser Simulation */
 .browser-sim {
   max-width: 800px;
   margin: 3rem auto;
@@ -941,7 +939,6 @@ section {
   background-color: rgba(0, 217, 255, 0.1);
 }
 
-/* Footer */
 .footer {
   background-color: var(--bg-darker);
   padding: 3rem 1rem 1.5rem;
@@ -1022,7 +1019,6 @@ section {
   font-size: 0.9rem;
 }
 
-/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -1121,7 +1117,7 @@ section {
 }
 
 .modal-warning {
-  background-color: rgba(255, 42, 109, 0.1);
+  background-color: var(--neon-green)
   border-left: 4px solid var(--neon-pink);
   padding: 1rem;
   margin-top: 1rem;
@@ -1285,4 +1281,493 @@ section {
   .preview-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Add these new styles to the end of your existing styles.css file */
+
+/* About Page Styles */
+.about-hero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 700px;
+  background: linear-gradient(135deg, rgba(5, 5, 5, 0.9), rgba(10, 10, 10, 0.95));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.about-content {
+  padding: 5rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-text-block {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.about-text-block:hover {
+  border-color: var(--neon-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 217, 255, 0.1);
+}
+
+.about-text-block.highlight {
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(185, 103, 255, 0.05));
+  border-color: var(--neon-purple);
+}
+
+.about-image-placeholder {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.1), rgba(0, 217, 255, 0.1));
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  text-align: center;
+  color: var(--text-gray);
+  font-family: var(--font-pixel);
+  padding: 2rem;
+}
+
+.about-services {
+  margin-top: 2rem;
+}
+
+.about-services h3 {
+  font-size: 1.8rem;
+  color: var(--neon-purple);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.about-services .service-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.about-services .service-card:hover {
+  border-color: var(--neon-green);
+  transform: translateY(-5px);
+}
+
+.about-services .service-card h4 {
+  color: var(--neon-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.about-services .service-card p {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.about-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Portfolio Page Styles */
+.portfolio-hero {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 700px;
+  background: linear-gradient(135deg, rgba(5, 5, 5, 0.9), rgba(10, 10, 10, 0.95));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.portfolio-grid-section {
+  padding: 5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: var(--neon-blue);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 217, 255, 0.15);
+}
+
+.project-image {
+  height: 200px;
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.1), rgba(0, 217, 255, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  color: var(--neon-green);
+  margin-bottom: 1rem;
+  font-family: var(--font-pixel);
+}
+
+.project-description {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tag {
+  background-color: rgba(0, 217, 255, 0.1);
+  color: var(--neon-blue);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-family: var(--font-pixel);
+}
+
+.portfolio-cta {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.05), rgba(185, 103, 255, 0.05));
+  border-radius: 12px;
+  border: 1px solid var(--neon-purple);
+}
+
+.portfolio-cta p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .about-hero, .portfolio-hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .about-content, .portfolio-grid-section {
+    padding: 3rem 1rem;
+  }
+  
+  .portfolio-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .about-services .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-services .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 180px;
+  }
+  
+  .portfolio-cta {
+    padding: 2rem 1rem;
+  }
+  
+  .about-studio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-pricing-cta {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.05), rgba(185, 103, 255, 0.05));
+  border-radius: 12px;
+  border: 1px solid var(--neon-purple);
+}
+
+.about-pricing-cta h2 {
+  font-size: 2rem;
+  color: var(--neon-green);
+  margin-bottom: 1rem;
+}
+
+.about-pricing-cta p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: var(--neon-blue);
+  border: 1px solid var(--neon-blue);
+}
+
+.cta-button.secondary:hover {
+  background-color: rgba(0, 217, 255, 0.1);
+}
+
+.portfolio-cta h2 {
+  font-size: 2rem;
+  color: var(--neon-green);
+  margin-bottom: 1rem;
+}
+
+.portfolio-cta p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .about-pricing-cta, .portfolio-cta {
+    padding: 2rem 1rem;
+  }
+  
+  .about-pricing-cta h2, .portfolio-cta h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .cta-button, .cta-button.secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.project-behance-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-blue));
+  color: var(--bg-dark);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-family: var(--font-pixel);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(185, 103, 255, 0.3);
+}
+
+.project-behance-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(185, 103, 255, 0.5);
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+}
+
+.project-description-scroll {
+  height: 180px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding-right: 0.5rem;
+  position: relative;
+}
+
+.project-description-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.project-description-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+}
+
+.project-description-scroll::-webkit-scrollbar-thumb {
+  background: var(--neon-blue);
+  border-radius: 2px;
+}
+
+.project-description-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
+
+.project-external-link {
+  color: var(--neon-blue);
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.project-external-link:hover {
+  color: var(--neon-green);
+  border-bottom-color: var(--neon-green);
+  padding-left: 0.3rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description-scroll {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .project-img {
+    height: 180px;
+  }
+  
+  .project-description-scroll {
+    height: 160px;
+  }
+  
+  .project-behance-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-img {
+    height: 160px;
+  }
+  
+  .project-description-scroll {
+    height: 140px;
+  }
+  
+  .project-behance-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .portfolio-projects-grid {
+    gap: 1.5rem;
+  }
+}
+
+@keyframes scrollHint {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.project-description-scroll:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, var(--card-bg));
+  pointer-events: none;
+  animation: scrollHint 2s infinite;
+}
+
+.project-description-scroll.scrolling:after {
+  opacity: 0;
+  animation: none;
+ }
 }
